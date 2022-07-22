@@ -1,0 +1,2504 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit&display=swap');
+
+*{
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+	}
+
+body{
+	min-height: 100%;
+	background-color: #EDD2B4;
+}
+
+/* Micrositio - Relevamiento */
+
+.contenedormicro{
+	width: 95%;
+	margin-right: auto;
+	margin-left: auto;
+	display: grid; 
+	grid-template-columns: 1fr 1fr 1fr;
+	grid-template-rows: repeat(3, auto);
+	grid-template-areas: "header header	navbar"
+						 "contenidomicro contenidomicro 	contenidomicro"  
+						 "footer footer	footer"; 
+}
+
+.contenedormicro .header{
+	background-color: #000000;
+	grid-area: header;
+}
+
+.logo{
+	width: 22%;
+	padding: 2%;
+	margin-top: 0.5%;
+	margin-left: 3%;
+}
+
+.contenedormicro  .navbar{
+	background-color: #000000;
+	grid-area:  navbar;
+}
+
+.contenedormicro .contenidomicro{
+	background-color: #00D9FF; 
+	grid-area: contenidomicro;
+}
+
+.contenedormicro .footer{
+	background-color: #000000;
+	grid-area: footer;
+}
+
+.titulomicro{
+	font-family: 'kanit', sans-serif;
+	color: #000000;
+	margin-top: 3%;
+	margin-left: 38.5%;
+	margin-bottom: 3%;
+	text-shadow: 0 0 8px #ffffff;
+}
+
+.pdf{
+	width: 600px;
+	height: 600px;
+	margin-left: 25.3%;
+	margin-bottom: 5%;
+}
+
+/* Micrositio - Menú */
+
+.r-link{
+  display: inline-flex;
+}
+
+.r-link[href]{
+  color: #ffffff;
+  text-decoration: none;
+  font-family: 'kanit', sans-serif;
+}
+
+.r-list{
+  padding-left: 0;
+  margin-bottom: 0;
+  list-style: none;
+}
+
+.menu{
+  color: #ffffff;
+}
+
+.menu__link{
+  display: block;
+}
+
+
+.menu:hover .menu__link:not(:hover){
+  color: #ffffff;
+}
+
+.menu{
+  background-color: #ffffff;
+  box-shadow: 0 1px 3px 0 rgba(0, 0, 0, .12), 0 1px 2px 0 rgba(0, 0, 0, .24);
+}
+
+.menu__list{
+  display: flex;  
+}
+
+.menu__link{
+  padding: 2rem 3rem;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.text-underlined{
+  position: relative;
+  overflow: hidden;
+
+  will-change: color;
+  transition: color .25s ease-out;  
+}
+
+.text-underlined::before, 
+.text-underlined::after{
+  content: "";
+  width: 0;
+  height: 3px;
+  background-color: #ffffff;
+
+  will-change: width;
+  transition: width .1s ease-out;
+
+  position: absolute;
+  bottom: 0;
+}
+
+.text-underlined::before{
+  left: 50%;
+  transform: translateX(-50%); 
+}
+
+.text-underlined::after{
+  right: 50%;
+  transform: translateX(50%); 
+}
+
+.text-underlined:hover::before, 
+.text-underlined:hover::after{
+  width: 100%;
+  transition-duration: .2s;
+}
+
+.page__custom-settings{
+  background-color: #ffffff;
+ 	color: #ffffff;
+ 	color-: #ffffff;
+  --menuLinkOutlineOffset: -.5rem; 
+}
+
+.page__menu:nth-child(n+2){
+  margin-top: 3rem;
+}
+
+/* Micrositio - Footer */
+
+.behance{
+	width: 7%;
+	float: left;
+	margin-left: 3%;
+	margin-top: 1.5%;
+	margin-bottom: 1%;
+}
+
+.valentino{
+	text-decoration: none;
+	color: white;
+	font-family: 'kanit', sans-serif;
+	margin-left: 35%;
+	float: left;
+	margin-top: 1.3%;
+}
+
+.uces{
+	width: 5%;
+	margin-top: 1%;
+	float: right;
+	margin-right: 3%;
+	margin-bottom: 1%;
+}
+
+/* Micrositio - Memoria */
+
+/* MEMORIA --------------------- */
+
+.contenedormicro1{
+	width: 95%;
+	margin-right: auto;
+	margin-left: auto;
+	display: grid; 
+	grid-template-columns: 1fr 1fr 1fr;
+	grid-template-rows: repeat(3, auto);
+	grid-template-areas: "header header	navbar"
+						 "contenido1 contenido1 contenido1"  
+						 "footer footer	footer"; 
+}
+
+.contenedormicro1 .header{
+	background-color: #000000;
+	grid-area: header;
+}
+
+.logo{
+	width: 22%;
+	padding: 2%;
+	margin-top: 0.5%;
+	margin-left: 3%;
+}
+
+.contenedormicro1  .navbar {
+	background-color: #000000;
+	grid-area:  navbar;
+}
+
+.contenedormicro1 .contenido1{
+	background-color: #00D9FF; 
+	grid-area: contenido1;
+}
+
+.contenedormicro1 .footer{
+	background-color: #000000;
+	grid-area: footer;
+}
+
+.titulomicro2{
+	font-family: 'kanit', sans-serif;
+	color: #000000;
+	margin-top: 3%;
+	margin-left: 40.7%;
+	margin-bottom: 3%;
+	text-shadow: 0 0 8px #ffffff;
+}
+
+.tipografia{
+	font-family: 'kanit', sans-serif;
+	font-size: 25px;
+	color: #000000;
+	margin-top: 3%;
+	margin-left: 20%;
+}
+
+.tipos{
+	width: 470px;
+	margin-left: 20%;
+	margin-top: 2.5%;
+	margin-bottom: 2%;
+}
+
+.paleta{
+	font-family: 'kanit', sans-serif;
+	font-size: 25px;
+	color: #000000;
+	margin-top: 2%;
+	margin-left:20%;
+}
+
+.colores{
+	width: 500px;
+	margin-left: 9%;
+	margin-top: 1%;
+	margin-left: 19%;
+}
+
+.morfologia{
+	font-family: 'kanit', sans-serif;
+	font-size: 25px;
+	color: #000000;
+	margin-top: 3%;
+	margin-left: 20%;
+}
+
+.micromemoria{
+	font-family: 'kanit', sans-serif;
+	width: 500px;
+	font-size: 16px;
+	margin-left: 20%;
+	margin-top: 1%;
+	margin-right: 20%;
+}
+
+.micromemoria3{
+	font-family: 'kanit', sans-serif;
+	width: 500px;
+	font-size: 16px;
+	margin-left: 20%;
+	margin-top: 1%;
+	margin-right: 20%;
+	margin-bottom: 3%;
+}
+
+/* Micrositio - Estructura */
+
+.contenedormicro2{
+	width: 95%;
+	margin-right: auto;
+	margin-left: auto;
+	display: grid; 
+	grid-template-columns: 1fr 1fr 1fr;
+	grid-template-rows: repeat(3, auto);
+	grid-template-areas: "header header	navbar"
+						 "contenido2 contenido2 contenido2"  
+						 "footer footer	footer"; 
+}
+
+.contenedormicro2 .header{
+	background-color: #000000;
+	grid-area: header;
+}
+
+.logo{
+	width: 22%;
+	padding: 2%;
+	margin-top: 0.5%;
+	margin-left: 3%;
+}
+
+.contenedormicro2  .navbar {
+	background-color: #000000;
+	grid-area:  navbar;
+}
+
+.contenedormicro2 .contenido2{
+	background-color: #00D9FF; 
+	grid-area: contenido2;
+}
+
+.contenedormicro2 .footer{
+	background-color: #000000;
+	grid-area: footer;
+}
+
+.titulomicro3{
+	font-family: 'kanit', sans-serif;
+	color: #000000;
+	margin-top: 3%;
+	margin-left: 40.1%;
+	margin-bottom: 3%;
+	text-shadow: 0 0 8px #ffffff;
+}
+
+.medida1{
+	font-family: 'kanit', sans-serif;
+	font-size: 25px;
+	float: left;
+	color: #000000;
+	margin-bottom: 1%;
+	margin-left:24%;
+}
+
+.medida2{
+	font-family: 'kanit', sans-serif;
+	font-size: 25px;
+	float: left;
+	color: #000000;
+	margin-top: 2%;
+	margin-bottom: 1%;
+	margin-left:24%;
+}
+
+.medida3{
+	font-family: 'kanit', sans-serif;
+	font-size: 25px;
+	float: left;
+	color: #000000;
+	margin-top: 2%;
+	margin-bottom: 1%;
+	margin-left:24%;
+}
+
+.medida4{
+	font-family: 'kanit', sans-serif;
+	font-size: 25px;
+	float: left;
+	color: #000000;
+	margin-top: 2%;
+	margin-bottom: 1%;
+	margin-left:24%;
+}
+
+.galeriawire{
+	float: left;
+	margin-left: 24%;
+	margin-bottom: 2%;
+}
+
+.galeriawire2{
+	float: left;
+	margin-left: 24%;
+	margin-right: 5%;
+	margin-bottom: 2%;
+}
+
+.galeriawire3{
+	float: left;
+	margin-left: 24%;
+	margin-right: 5%;
+	margin-bottom: 2%;
+}
+
+.galeriawire4{
+	float: left;
+	margin-left: 24%;
+	margin-right: 5%;
+	margin-bottom: 2%;
+}
+
+/* Micrositio - Muestra */
+
+.contenedormicro3{
+	width: 95%;
+	margin-right: auto;
+	margin-left: auto;
+	display: grid; 
+	grid-template-columns: 1fr 1fr 1fr;
+	grid-template-rows: repeat(3, auto);
+	grid-template-areas: "header header	navbar"
+						 "contenido3 contenido3 contenido3"  
+						 "footer footer	footer"; 
+}
+
+.contenedormicro3 .header{
+	background-color: #000000;
+	grid-area: header;
+}
+
+.logo{
+	width: 22%;
+	padding: 2%;
+	margin-top: 0.5%;
+	margin-left: 3%;
+}
+
+.contenedormicro3  .navbar {
+	background-color: #000000;
+	grid-area:  navbar;
+}
+
+.contenedormicro3 .contenido3{
+	background-color: #00D9FF; 
+	grid-area: contenido3;
+}
+
+.contenedormicro3 .footer{
+	background-color: #000000;
+	grid-area: footer;
+}
+
+.titulomicro4{
+	font-family: 'kanit', sans-serif;
+	color: #000000;
+	margin-top: 3%;
+	margin-left: 41%;
+	margin-bottom: 3%;
+	text-shadow: 0 0 8px #ffffff;
+}
+
+.videoyt{
+	width: 600px;
+	height: 365px;
+	margin-left: 25%;
+	margin-bottom: 5%;
+}
+
+.pdfguide{
+	width: 600px;
+	height: 600px;
+	margin-left: 25%;
+	margin-bottom: 5%;
+}
+
+/* @media small Micrositio - Relevamiento */
+
+@media (min-width: 576px) and (max-width: 767px){
+
+.contenedormicro{
+	width: 100%;
+	margin-right: auto;
+	margin-left: auto;
+	display: grid; 
+	grid-template-columns: 1fr;
+	grid-template-rows: repeat(4, auto);
+	grid-template-areas: "header "
+						 "navbar"
+						 "contenidomicro" 
+						 "footer "; 
+}
+
+.contenedormicro .header{
+	background-color: #000000;
+	grid-area: header;
+}
+
+.logo{
+	width: 30%;
+	margin-left: 36%;
+}
+
+.contenedormicro  .navbar{
+	background-color: #000000;
+	grid-area:  navbar;
+}
+
+.r-link{
+  display: inline-flex;
+}
+
+.r-link[href]{
+  color: #ffffff;
+  text-decoration: none;
+  font-family: 'kanit', sans-serif;
+}
+
+.r-list{
+  padding-left: 0;
+  margin-left: 7%;
+  margin-bottom: 0;
+  list-style: none;
+}
+
+.menu{
+  color: #ffffff;
+}
+
+.menu__link{
+  display: block;
+}
+
+
+.menu:hover .menu__link:not(:hover){
+  color: #ffffff;
+}
+
+.menu{
+  background-color: #ffffff;
+  box-shadow: 0 1px 3px 0 rgba(0, 0, 0, .12), 0 1px 2px 0 rgba(0, 0, 0, .24);
+}
+
+.menu__list{
+  display: flex;  
+}
+
+.menu__link{
+  padding: 2rem 3rem;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.contenedormicro .contenidomicro{
+	background-color: #00D9FF; 
+	grid-area: contenidomicro;
+}
+
+.titulomicro{
+	font-family: 'kanit', sans-serif;
+	color: #000000;
+	margin-top: 3%;
+	margin-left: 26.2%;
+	margin-bottom: 3%;
+}
+
+.contenedormicro .footer{
+	background-color: #000000;
+	grid-area: footer;
+}
+
+.pdf{
+	width: 400px;
+	height: 600px;
+	margin-left: 15.8%;
+	margin-bottom: 5%;
+}
+
+.behance{
+	width: 12%;
+	float: left;
+	margin-top: 1.7%;
+	margin-left: 3%;
+}
+
+.uces{
+	width: 7%;
+	float: right;
+	margin-right: 3%;
+	margin-top: 1%;
+}
+
+.valentino{
+	text-decoration: none;
+	color: #ffffff;
+	font-family: 'kanit', sans-serif;
+	margin-left: 24%;
+	float: left;
+	margin-top: 1%;
+}
+
+}
+
+/* @media small Micrositio - Memoria */
+
+@media (min-width: 576px) and (max-width: 767px){
+
+.contenedormicro1{
+	width: 100%;
+	margin-right: auto;
+	margin-left: auto;
+	display: grid; 
+	grid-template-columns: 1fr;
+	grid-template-rows: repeat(4, auto);
+	grid-template-areas: "header "
+						 "navbar"
+						 "contenido1" 
+						 "footer "; 
+}
+
+.contenedormicro1 .header{
+	background-color: #000000;
+	grid-area: header;
+}
+
+.logo{
+	width: 30%;
+	margin-left: 36%;
+}
+
+.contenedormicro1  .navbar{
+	background-color: #000000;
+	grid-area:  navbar;
+}
+
+.contenedormicro1 .contenido1{
+	background-color: #00D9FF; 
+	grid-area: contenido1;
+}
+
+.titulomicro2{
+	font-family: 'kanit', sans-serif;
+	color: #000000;
+	margin-top: 3%;
+	margin-left: 31%;
+	margin-bottom: 3%;
+}
+
+.contenedormicro1 .footer{
+	background-color: #000000;
+	grid-area: footer;
+}
+
+.tipografia{
+	font-family: 'kanit', sans-serif;
+	font-size: 25px;
+	color: #000000;
+	margin-top: 3%;
+	margin-left: 7%;
+}
+
+.tipos{
+	width: 470px;
+	margin-left: 7%;
+	margin-top: 4%;
+	margin-bottom: 2%;
+}
+
+.paleta{
+	font-family: 'kanit', sans-serif;
+	font-size: 25px;
+	color: #000000;
+	margin-top: 2%;
+	margin-left:7%;
+}
+
+.colores{
+	width: 500px;
+	margin-left: 9%;
+	margin-top: 2%;
+	margin-left: 5%;
+}
+
+.morfologia{
+	font-family: 'kanit', sans-serif;
+	font-size: 25px;
+	color: #000000;
+	margin-top: 3%;
+	margin-left: 7%;
+}
+
+.micromemoria{
+	font-family: 'kanit', sans-serif;
+	width: 500px;
+	font-size: 16px;
+	margin-left: 7%;
+	margin-top: 1%;
+	margin-right: 7%;
+}
+
+.micromemoria3{
+	font-family: 'kanit', sans-serif;
+	width: 500px;
+	font-size: 16px;
+	margin-left: 7%;
+	margin-top: 1%;
+	margin-right: 7%;
+	margin-bottom: 7%;
+}
+
+}
+
+/* @media small Micrositio - Estructura */
+
+@media (min-width: 576px) and (max-width: 767px){
+
+.contenedormicro2{
+	width: 100%;
+	margin-right: auto;
+	margin-left: auto;
+	display: grid; 
+	grid-template-columns: 1fr;
+	grid-template-rows: repeat(4, auto);
+	grid-template-areas: "header "
+						 "navbar"
+						 "contenido2" 
+						 "footer "; 
+}
+
+.contenedormicro2 .header{
+	background-color: #000000;
+	grid-area: header;
+}
+
+.logo{
+	width: 30%;
+	margin-left: 36%;
+}
+
+.contenedormicro2  .navbar{
+	background-color: #000000;
+	grid-area:  navbar;
+}
+
+.contenedormicro2 .contenido2{
+	background-color: #00D9FF; 
+	grid-area: contenido2;
+}
+
+.titulomicro3{
+	font-family: 'kanit', sans-serif;
+	color: #000000;
+	margin-top: 3%;
+	margin-left: 29.8%;
+	margin-bottom: 3%;
+}
+
+.contenedormicro2 .footer{
+	background-color: #000000;
+	grid-area: footer;
+}
+
+.medida1{
+	font-family: 'kanit', sans-serif;
+	font-size: 20px;
+	float: left;
+	color: #000000;
+	margin-bottom: 1%;
+	margin-left:16%;
+}
+
+.medida2{
+	font-family: 'kanit', sans-serif;
+	font-size: 20px;
+	float: left;
+	color: #000000;
+	margin-top: 2%;
+	margin-bottom: 1%;
+	margin-left:16%;
+}
+
+.medida3{
+	font-family: 'kanit', sans-serif;
+	font-size: 20px;
+	float: left;
+	color: #000000;
+	margin-top: 2%;
+	margin-bottom: 1%;
+	margin-left:16%;
+}
+
+.medida4{
+	font-family: 'kanit', sans-serif;
+	font-size: 20px;
+	float: left;
+	color: #000000;
+	margin-top: 2%;
+	margin-bottom: 1%;
+	margin-left:16%;
+}
+
+.galeriawire{
+	float: left;
+	margin-right: 5%;
+	margin-left: 16%;
+	margin-bottom: 2%;
+}
+
+.galeriawire2{
+	float: left;
+	margin-left: 16%;
+	margin-right: 5%;
+	margin-bottom: 2%;
+}
+
+.galeriawire3{
+	float: left;
+	margin-left: 16%;
+	margin-right: 5%;
+	margin-bottom: 2%;
+}
+
+.galeriawire4{
+	float: left;
+	margin-left: 16%;
+	margin-right: 5%;
+	margin-bottom: 5%;
+}
+
+.foto1{
+	width: 85%;
+}
+
+}
+
+/* @media small Micrositio - Muestra */
+
+@media (min-width: 576px) and (max-width: 767px){
+
+.contenedormicro3{
+	width: 100%;
+	margin-right: auto;
+	margin-left: auto;
+	display: grid; 
+	grid-template-columns: 1fr;
+	grid-template-rows: repeat(4, auto);
+	grid-template-areas: "header "
+						 "navbar"
+						 "contenido3" 
+						 "footer "; 
+}
+
+.contenedormicro3 .header{
+	background-color: #000000;
+	grid-area: header;
+}
+
+.logo{
+	width: 30%;
+	margin-left: 36%;
+}
+
+.contenedormicro3  .navbar{
+	background-color: #000000;
+	grid-area:  navbar;
+}
+
+.contenedormicro3 .contenido3{
+	background-color: #00D9FF; 
+	grid-area: contenido3;
+}
+
+.titulomicro4{
+	font-family: 'kanit', sans-serif;
+	color: #000000;
+	margin-top: 3%;
+	margin-left: 30.9%;
+	margin-bottom: 3%;
+}
+
+.contenedormicro3 .footer{
+	background-color: #000000;
+	grid-area: footer;
+}
+
+.videoyt{
+	width: 420px;
+	height: 285px;
+	margin-left: 13%;
+	margin-bottom: 5%;
+}
+
+.pdfguide{
+	width: 420px;
+	height: 550px;
+	margin-left: 13%;
+	margin-bottom: 5%;
+}
+
+}
+
+/* @media medium Micrositio - Relevamiento */
+
+@media (min-width: 768px) and (max-width: 991px) {
+
+.contenedormicro{
+	width: 100%;
+	margin-right: auto;
+	margin-left: auto;
+	display: grid; 
+	grid-template-columns: 1fr 1fr 1fr;
+	grid-template-rows: repeat(3, auto);
+	grid-template-areas: "header header	navbar"
+						 "contenidomicro contenidomicro contenidomicro" 
+						 "footer footer	footer"; 
+}
+
+.contenedormicro .header{
+	background-color: #000000;
+	grid-area: header;
+}
+
+.logo{
+	width: 40%;
+	margin-top: 1%;
+	margin-left: 3%;
+	padding: 2%;
+}
+
+.contenedormicro  .navbar{
+	background-color: #000000;
+	grid-area:  navbar;
+}
+
+.r-link{
+  display: inline-flex;
+}
+
+.r-link[href]{
+  color: #ffffff;
+  text-decoration: none;
+  font-family: 'kanit', sans-serif;
+}
+
+.r-list{
+  padding-left: 0;
+  margin-top: 1%;
+  margin-bottom: 0;
+  list-style: none;
+}
+
+.menu{
+  color: #ffffff;
+}
+
+.menu__link{
+  display: block;
+}
+
+
+.menu:hover .menu__link:not(:hover){
+  color: #ffffff;
+}
+
+.menu{
+  background-color: #ffffff;
+  box-shadow: 0 1px 3px 0 rgba(0, 0, 0, .12), 0 1px 2px 0 rgba(0, 0, 0, .24);
+}
+
+.menu__list{
+  display: flex;  
+}
+
+.menu__link{
+  padding: 1.5rem 2rem;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.contenedormicro .contenidomicro{
+	background-color: #00D9FF; 
+	grid-area: contenidomicro;
+}
+
+.titulomicro{
+	font-family: 'kanit', sans-serif;
+	color: #000000;
+	margin-top: 3%;
+	margin-left: 30.8%;
+	margin-bottom: 3%;
+}
+
+.contenedormicro .footer{
+	background-color: #000000;
+	grid-area: footer;
+}
+
+.pdf{
+	width: 550px;
+	height: 600px;
+	margin-left: 13.8%;
+	margin-bottom: 5%;
+}
+
+.behance{
+	width: 12%;
+	float: left;
+	margin-top: 1.8%;
+	margin-left: 3%;
+}
+
+.valentino{
+	text-decoration: none;
+	color: #ffffff;
+	font-family: 'kanit', sans-serif;
+	margin-left: 26.5%;
+	float: left;
+	margin-top: 1.5%;
+}
+
+.uces{
+	width: 8%;
+	float: right;
+	margin-right: 3%;
+	margin-top: 1%;
+}
+
+}
+
+/* @media medium Micrositio - Memoria */
+
+@media (min-width: 768px) and (max-width: 991px) {
+
+.contenedormicro1{
+	width: 100%;
+	margin-right: auto;
+	margin-left: auto;
+	display: grid; 
+	grid-template-columns: 1fr 1fr 1fr;
+	grid-template-rows: repeat(3, auto);
+	grid-template-areas: "header header	navbar"
+						 "contenido1 contenido1 contenido1" 
+						 "footer footer	footer"; 
+}
+
+.contenedormicro1 .header{
+	background-color: #000000;
+	grid-area: header;
+}
+
+.logo{
+	width: 40%;
+	margin-top: 1%;
+	margin-left: 3%;
+	padding: 2%;
+}
+
+.contenedormicro1  .navbar{
+	background-color: #000000;
+	grid-area:  navbar;
+}
+
+.contenedormicro1 .contenido1{
+	background-color: #00D9FF; 
+	grid-area: contenido1;
+}
+
+.titulomicro2{
+	font-family: 'kanit', sans-serif;
+	color: #000000;
+	margin-top: 3%;
+	margin-left: 35.3%;
+	margin-bottom: 3%;
+}
+
+.contenedormicro1 .footer{
+	background-color: #000000;
+	grid-area: footer;
+}
+
+.tipografia{
+	margin-left: 17%;
+}
+
+.tipos{
+	margin-left: 17%;
+}
+
+.paleta{
+	margin-left:17%;
+}
+
+.colores{
+	margin-left: 15%;
+}
+
+.morfologia{
+	margin-left: 17%;
+}
+
+.micromemoria{
+	margin-left: 17%;
+	margin-right: 17%;
+}
+
+.micromemoria3{
+	margin-left: 17%;
+	margin-right: 17%;
+	margin-bottom: 7%;
+}
+
+}
+
+/* @media medium Micrositio - Estructura */
+
+@media (min-width: 768px) and (max-width: 991px) {
+
+.contenedormicro2{
+	width: 100%;
+	margin-right: auto;
+	margin-left: auto;
+	display: grid; 
+	grid-template-columns: 1fr 1fr 1fr;
+	grid-template-rows: repeat(3, auto);
+	grid-template-areas: "header header	navbar"
+						 "contenido2 contenido2 contenido2" 
+						 "footer footer	footer"; 
+}
+
+.contenedormicro2 .header{
+	background-color: #000000;
+	grid-area: header;
+}
+
+.logo{
+	width: 40%;
+	margin-top: 1%;
+	margin-left: 3%;
+	padding: 2%;
+}
+
+.contenedormicro2  .navbar{
+	background-color: #000000;
+	grid-area:  navbar;
+}
+
+.contenedormicro2 .contenido2{
+	background-color: #00D9FF; 
+	grid-area: contenido2;
+}
+
+.titulomicro3{
+	font-family: 'kanit', sans-serif;
+	color: #000000;
+	margin-top: 3%;
+	margin-left: 34.7%;
+	margin-bottom: 3%;
+}
+
+.contenedormicro2 .footer{
+	background-color: #000000;
+	grid-area: footer;
+}
+
+.medida1{
+	font-family: 'kanit', sans-serif;
+	font-size: 20px;
+	float: left;
+	color: #000000;
+	margin-bottom: 1%;
+	margin-left:17%;
+}
+
+.medida2{
+	font-family: 'kanit', sans-serif;
+	font-size: 20px;
+	float: left;
+	color: #000000;
+	margin-top: 2%;
+	margin-bottom: 1%;
+	margin-left:17%;
+}
+
+.medida3{
+	font-family: 'kanit', sans-serif;
+	font-size: 20px;
+	float: left;
+	color: #000000;
+	margin-top: 2%;
+	margin-bottom: 1%;
+	margin-left:17%;
+}
+
+.medida4{
+	font-family: 'kanit', sans-serif;
+	font-size: 20px;
+	float: left;
+	color: #000000;
+	margin-top: 2%;
+	margin-bottom: 1%;
+	margin-left:17%;
+}
+
+.galeriawire{
+	float: left;
+	margin-right: 5%;
+	margin-left: 17%;
+	margin-bottom: 2%;
+}
+
+.galeriawire2{
+	float: left;
+	margin-left: 17%;
+	margin-right: 5%;
+	margin-bottom: 2%;
+}
+
+.galeriawire3{
+	float: left;
+	margin-left: 17%;
+	margin-right: 5%;
+	margin-bottom: 2%;
+}
+
+.galeriawire4{
+	float: left;
+	margin-left: 17%;
+	margin-right: 5%;
+	margin-bottom: 5%;
+}
+
+.foto1{
+	width: 85%;
+}
+
+}
+
+/* @media medium Micrositio - Muestra */
+
+@media (min-width: 768px) and (max-width: 991px) {
+
+.contenedormicro3{
+	width: 100%;
+	margin-right: auto;
+	margin-left: auto;
+	display: grid; 
+	grid-template-columns: 1fr 1fr 1fr;
+	grid-template-rows: repeat(3, auto);
+	grid-template-areas: "header header	navbar"
+						 "contenido3 contenido3 contenido3" 
+						 "footer footer	footer"; 
+}
+
+.contenedormicro3 .header{
+	background-color: #000000;
+	grid-area: header;
+}
+
+.logo{
+	width: 40%;
+	margin-top: 1%;
+	margin-left: 3%;
+	padding: 2%;
+}
+
+.contenedormicro3  .navbar{
+	background-color: #000000;
+	grid-area:  navbar;
+}
+
+.contenedormicro3 .contenido3{
+	background-color: #00D9FF; 
+	grid-area: contenido3;
+}
+
+.titulomicro4{
+	font-family: 'kanit', sans-serif;
+	color: #000000;
+	margin-top: 3%;
+	margin-left: 36%;
+	margin-bottom: 3%;
+}
+
+.contenedormicro3 .footer{
+	background-color: #000000;
+	grid-area: footer;
+}
+
+.videoyt{
+	width: 470px;
+	height: 300px;
+	margin-left: 19%;
+	margin-bottom: 5%;
+}
+
+.pdfguide{
+	width: 470px;
+	height: 570px;
+	margin-left: 19%;
+	margin-bottom: 5%;
+}
+
+}
+
+/* @media large Micrositio - Relevamiento */
+
+@media (min-width: 992px) and (max-width: 1199px) {
+
+.contenedormicro{
+	width: 95%;
+	margin-right: auto;
+	margin-left: auto;
+	display: grid; 
+	grid-template-columns: 1fr 1fr 1fr;
+	grid-template-rows: repeat(3, auto);
+	grid-template-areas: "header header	navbar"
+						 "contenidomicro contenidomicro contenidomicro" 
+						 "footer footer	footer"; 
+}
+
+.contenedormicro .header{
+	background-color: #000000;
+	grid-area: header;
+}
+
+.logo{
+	width: 30%;
+	margin-top: 1%;
+	margin-left: 3%;
+	padding: 2%;
+}
+
+.contenedormicro  .navbar{
+	background-color: #000000;
+	grid-area:  navbar;
+}
+
+.r-link{
+  display: inline-flex;
+}
+
+.r-link[href]{
+  color: #ffffff;
+  text-decoration: none;
+  font-family: 'kanit', sans-serif;
+}
+
+.r-list{
+  padding-left: 0;
+  margin-top: 2.5%;
+  margin-bottom: 0;
+  list-style: none;
+}
+
+.menu{
+  color: #ffffff;
+}
+
+.menu__link{
+  display: block;
+}
+
+
+.menu:hover .menu__link:not(:hover){
+  color: #ffffff;
+}
+
+.menu{
+  background-color: #ffffff;
+  box-shadow: 0 1px 3px 0 rgba(0, 0, 0, .12), 0 1px 2px 0 rgba(0, 0, 0, .24);
+}
+
+.menu__list{
+  display: flex;  
+}
+
+.menu__link{
+  padding: 1.5rem 2rem;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.contenedormicro .contenidomicro{
+	background-color: #00D9FF; 
+	grid-area: contenidomicro;
+}
+
+.titulomicro{
+	font-family: 'kanit', sans-serif;
+	color: #000000;
+	margin-top: 3%;
+	margin-left: 35.3%;
+	margin-bottom: 3%;
+}
+
+.contenedormicro .footer{
+	background-color: #000000;
+	grid-area: footer;
+}
+
+.pdf{
+	width: 550px;
+	height: 600px;
+	margin-left: 20.7%;
+	margin-bottom: 5%;
+}
+
+.behance{
+	width: 9%;
+	float: left;
+	margin-top: 1.5%;
+	margin-left: 3%;
+}
+
+.valentino{
+	text-decoration: none;
+	color: #ffffff;
+	font-family: 'kanit', sans-serif;
+	margin-left: 31%;
+	float: left;
+	margin-top: 1.3%;
+}
+
+.uces{
+	width: 6%;
+	float: right;
+	margin-right: 3%;
+	margin-top: 1%;
+}
+
+}
+
+/* @media large Micrositio - Memoria */
+
+@media (min-width: 992px) and (max-width: 1199px) {
+
+.contenedormicro1{
+	width: 95%;
+	margin-right: auto;
+	margin-left: auto;
+	display: grid; 
+	grid-template-columns: 1fr 1fr 1fr;
+	grid-template-rows: repeat(3, auto);
+	grid-template-areas: "header header	navbar"
+						 "contenido1 contenido1 contenido1" 
+						 "footer footer	footer"; 
+}
+
+.contenedormicro1 .header{
+	background-color: #000000;
+	grid-area: header;
+}
+
+.logo{
+	width: 30%;
+	margin-top: 1%;
+	margin-left: 3%;
+	padding: 2%;
+}
+
+.contenedormicro1  .navbar{
+	background-color: #000000;
+	grid-area:  navbar;
+}
+
+.contenedormicro1 .contenido1{
+	background-color: #00D9FF; 
+	grid-area: contenido1;
+}
+
+.titulomicro2{
+	font-family: 'kanit', sans-serif;
+	color: #000000;
+	margin-top: 3%;
+	margin-left: 38%;
+	margin-bottom: 3%;
+}
+
+.contenedormicro1 .footer{
+	background-color: #000000;
+	grid-area: footer;
+}
+
+}
+
+/* @media large Micrositio - Estructura */
+
+@media (min-width: 992px) and (max-width: 1199px) {
+
+.contenedormicro2{
+	width: 95%;
+	margin-right: auto;
+	margin-left: auto;
+	display: grid; 
+	grid-template-columns: 1fr 1fr 1fr;
+	grid-template-rows: repeat(3, auto);
+	grid-template-areas: "header header	navbar"
+						 "contenido2 contenido2 contenido2" 
+						 "footer footer	footer"; 
+}
+
+.contenedormicro2 .header{
+	background-color: #000000;
+	grid-area: header;
+}
+
+.logo{
+	width: 30%;
+	margin-top: 1%;
+	margin-left: 3%;
+	padding: 2%;
+}
+
+.contenedormicro2  .navbar{
+	background-color: #000000;
+	grid-area:  navbar;
+}
+
+.contenedormicro2 .contenido2{
+	background-color: #00D9FF; 
+	grid-area: contenido2;
+}
+
+.titulomicro3{
+	font-family: 'kanit', sans-serif;
+	color: #000000;
+	margin-top: 3%;
+	margin-left: 37.2%;
+	margin-bottom: 3%;
+}
+
+.contenedormicro2 .footer{
+	background-color: #000000;
+	grid-area: footer;
+}
+
+.medida1{
+	font-family: 'kanit', sans-serif;
+	font-size: 23px;
+	float: left;
+	color: #000000;
+	margin-bottom: 1%;
+	margin-left:13%;
+}
+
+.medida2{
+	font-family: 'kanit', sans-serif;
+	font-size: 23px;
+	float: left;
+	color: #000000;
+	margin-top: 2%;
+	margin-bottom: 1%;
+	margin-left:13%;
+}
+
+.medida3{
+	font-family: 'kanit', sans-serif;
+	font-size: 23px;
+	float: left;
+	color: #000000;
+	margin-top: 2%;
+	margin-bottom: 1%;
+	margin-left:13%;
+}
+
+.medida4{
+	font-family: 'kanit', sans-serif;
+	font-size: 23px;
+	float: left;
+	color: #000000;
+	margin-top: 2%;
+	margin-bottom: 1%;
+	margin-left:13%;
+}
+
+.galeriawire{
+	float: left;
+	margin-right: 5%;
+	margin-left: 13%;
+	margin-bottom: 2%;
+}
+
+.galeriawire2{
+	float: left;
+	margin-left: 13%;
+	margin-right: 5%;
+	margin-bottom: 2%;
+}
+
+.galeriawire3{
+	float: left;
+	margin-left: 13%;
+	margin-right: 5%;
+	margin-bottom: 2%;
+}
+
+.galeriawire4{
+	float: left;
+	margin-left: 13%;
+	margin-right: 5%;
+	margin-bottom: 5%;
+}
+
+.foto1{
+	width: 45%;
+}
+
+}
+
+/* @media large Micrositio - Muestra */
+
+@media (min-width: 992px) and (max-width: 1199px) {
+
+.contenedormicro3{
+	width: 95%;
+	margin-right: auto;
+	margin-left: auto;
+	display: grid; 
+	grid-template-columns: 1fr 1fr 1fr;
+	grid-template-rows: repeat(3, auto);
+	grid-template-areas: "header header	navbar"
+						 "contenido3 contenido3 contenido3" 
+						 "footer footer	footer"; 
+}
+
+.contenedormicro3 .header{
+	background-color: #000000;
+	grid-area: header;
+}
+
+.logo{
+	width: 30%;
+	margin-top: 1%;
+	margin-left: 3%;
+	padding: 2%;
+}
+
+.contenedormicro3  .navbar{
+	background-color: #000000;
+	grid-area:  navbar;
+}
+
+.contenedormicro3 .contenido3{
+	background-color: #00D9FF; 
+	grid-area: contenido3;
+}
+
+.titulomicro4{
+	font-family: 'kanit', sans-serif;
+	color: #000000;
+	margin-top: 3%;
+	margin-left: 38.1%;
+	margin-bottom: 3%;
+}
+
+.contenedormicro3 .footer{
+	background-color: #000000;
+	grid-area: footer;
+}
+
+.videoyt{
+	width: 550px;
+	height: 370px;
+	margin-left: 20.7%;
+	margin-bottom: 5%;
+}
+
+.pdfguide{
+	width: 550px;
+	height: 650px;
+	margin-left: 20.7%;
+	margin-bottom: 5%;
+}
+
+}
+
+/* @media x-large 1 Micrositio - Relevamiento */
+
+@media (min-width: 1200px) and (max-width: 1399px){
+
+.contenedormicro{
+	width: 95%;
+	margin-right: auto;
+	margin-left: auto;
+	display: grid; 
+	grid-template-columns: 1fr 1fr 1fr;
+	grid-template-rows: repeat(3, auto);
+	grid-template-areas: "header header	navbar"
+						 "contenidomicro contenidomicro contenidomicro" 
+						 "footer footer	footer"; 
+}
+
+.contenedormicro .header{
+	background-color: #000000;
+	grid-area: header;
+}
+
+.logo{
+	width: 23%;
+	margin-top: 1%;
+	margin-left: 3%;
+	padding: 2%;
+}
+
+.contenedormicro  .navbar{
+	background-color: #000000;
+	grid-area:  navbar;
+}
+
+.r-link{
+  display: inline-flex;
+}
+
+.r-link[href]{
+  color: #ffffff;
+  text-decoration: none;
+  font-family: 'kanit', sans-serif;
+}
+
+.r-list{
+  padding-left: 0;
+  margin-top: 2.7%;
+  margin-bottom: 0;
+  list-style: none;
+}
+
+.menu{
+  color: #ffffff;
+}
+
+.menu__link{
+  display: block;
+}
+
+
+.menu:hover .menu__link:not(:hover){
+  color: #ffffff;
+}
+
+.menu{
+  background-color: #ffffff;
+  box-shadow: 0 1px 3px 0 rgba(0, 0, 0, .12), 0 1px 2px 0 rgba(0, 0, 0, .24);
+}
+
+.menu__list{
+  display: flex;  
+}
+
+.menu__link{
+  padding: 1.5rem 2rem;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.contenedormicro .contenidomicro{
+	background-color: #00D9FF; 
+	grid-area: contenidomicro;
+}
+
+.titulomicro{
+	font-family: 'kanit', sans-serif;
+	color: #000000;
+	margin-top: 3%;
+	margin-left: 37.5%;
+	margin-bottom: 3%;
+}
+
+.contenedormicro .footer{
+	background-color: #000000;
+	grid-area: footer;
+}
+
+.pdf{
+	width: 640px;
+	height: 630px;
+	margin-left: 22%;
+	margin-bottom: 5%;
+}
+
+.behance{
+	width: 9%;
+	float: left;
+	margin-top: 1.7%;
+	margin-left: 3%;
+}
+
+.valentino{
+	font-size: 19px;
+	text-decoration: none;
+	color: #ffffff;
+	font-family: 'kanit', sans-serif;
+	margin-left: 31.5%;
+	float: left;
+	margin-top: 1.3%;
+}
+
+.uces{
+	width: 6%;
+	float: right;
+	margin-right: 3%;
+	margin-top: 1%;
+}
+
+}
+
+/* @media x-large 1 Micrositio - Memoria */
+
+@media (min-width: 1200px) and (max-width: 1399px){
+
+.contenedormicro1{
+	width: 95%;
+	margin-right: auto;
+	margin-left: auto;
+	display: grid; 
+	grid-template-columns: 1fr 1fr 1fr;
+	grid-template-rows: repeat(3, auto);
+	grid-template-areas: "header header	navbar"
+						 "contenido1 contenido1 contenido1" 
+						 "footer footer	footer"; 
+}
+
+.contenedormicro1 .header{
+	background-color: #000000;
+	grid-area: header;
+}
+
+.logo{
+	width: 23%;
+	margin-top: 1%;
+	margin-left: 3%;
+	padding: 2%;
+}
+
+.contenedormicro1  .navbar{
+	background-color: #000000;
+	grid-area:  navbar;
+}
+
+.contenedormicro1 .contenido1{
+	background-color: #00D9FF; 
+	grid-area: contenido1;
+}
+
+.titulomicro2{
+	font-family: 'kanit', sans-serif;
+	color: #000000;
+	margin-top: 3%;
+	margin-left: 40%;
+	margin-bottom: 3%;
+}
+
+.contenedormicro1 .footer{
+	background-color: #000000;
+	grid-area: footer;
+}
+
+.tipografia{
+	margin-left: 19%;
+}
+
+.tipos{
+	width: 50%;
+	margin-left: 19%;
+}
+
+.paleta{
+	margin-left:19%;
+}
+
+.colores{
+	width: 50%;
+	margin-left: 18%;
+}
+
+.morfologia{
+	margin-left: 19%;
+}
+
+.micromemoria{
+	width: 55%;
+	font-size: 20px;
+	margin-left: 19%;
+	margin-right: 19%;
+}
+
+.micromemoria3{
+	width: 55%;
+	font-size: 20px;
+	margin-left: 19%;
+	margin-right: 19%;
+	margin-bottom: 7%;
+}
+
+}
+
+/* @media x-large 1 Micrositio - Estructura */
+
+@media (min-width: 1200px) and (max-width: 1399px){
+
+.contenedormicro2{
+	width: 95%;
+	margin-right: auto;
+	margin-left: auto;
+	display: grid; 
+	grid-template-columns: 1fr 1fr 1fr;
+	grid-template-rows: repeat(3, auto);
+	grid-template-areas: "header header	navbar"
+						 "contenido2 contenido2 contenido2" 
+						 "footer footer	footer"; 
+}
+
+.contenedormicro2 .header{
+	background-color: #000000;
+	grid-area: header;
+}
+
+.logo{
+	width: 23%;
+	margin-top: 1%;
+	margin-left: 3%;
+	padding: 2%;
+}
+
+.contenedormicro2  .navbar{
+	background-color: #000000;
+	grid-area:  navbar;
+}
+
+.contenedormicro2 .contenido2{
+	background-color: #00D9FF; 
+	grid-area: contenido2;
+}
+
+.titulomicro3{
+	font-family: 'kanit', sans-serif;
+	color: #000000;
+	margin-top: 3%;
+	margin-left: 39.7%;
+	margin-bottom: 3%;
+}
+
+.contenedormicro2 .footer{
+	background-color: #000000;
+	grid-area: footer;
+}
+
+.medida1{
+	font-family: 'kanit', sans-serif;
+	font-size: 25px;
+	float: left;
+	color: #000000;
+	margin-bottom: 1%;
+	margin-left:13%;
+}
+
+.medida2{
+	font-family: 'kanit', sans-serif;
+	font-size: 25px;
+	float: left;
+	color: #000000;
+	margin-top: 2%;
+	margin-bottom: 1%;
+	margin-left:13%;
+}
+
+.medida3{
+	font-family: 'kanit', sans-serif;
+	font-size: 25px;
+	float: left;
+	color: #000000;
+	margin-top: 2%;
+	margin-bottom: 1%;
+	margin-left:13%;
+}
+
+.medida4{
+	font-family: 'kanit', sans-serif;
+	font-size: 25px;
+	float: left;
+	color: #000000;
+	margin-top: 2%;
+	margin-bottom: 1%;
+	margin-left:13%;
+}
+
+.galeriawire{
+	float: left;
+	margin-right: 5%;
+	margin-left: 13%;
+	margin-bottom: 2%;
+}
+
+.galeriawire2{
+	float: left;
+	margin-left: 13%;
+	margin-right: 5%;
+	margin-bottom: 2%;
+}
+
+.galeriawire3{
+	float: left;
+	margin-left: 13%;
+	margin-right: 5%;
+	margin-bottom: 2%;
+}
+
+.galeriawire4{
+	float: left;
+	margin-left: 13%;
+	margin-right: 5%;
+	margin-bottom: 5%;
+}
+
+.foto1{
+	width: 45%;
+}
+
+}
+
+/* @media x-large 1 Micrositio - Muestra */
+
+@media (min-width: 1200px) and (max-width: 1399px){
+
+.contenedormicro3{
+	width: 95%;
+	margin-right: auto;
+	margin-left: auto;
+	display: grid; 
+	grid-template-columns: 1fr 1fr 1fr;
+	grid-template-rows: repeat(3, auto);
+	grid-template-areas: "header header	navbar"
+						 "contenido3 contenido3 contenido3" 
+						 "footer footer	footer"; 
+}
+
+.contenedormicro3 .header{
+	background-color: #000000;
+	grid-area: header;
+}
+
+.logo{
+	width: 23%;
+	margin-top: 1%;
+	margin-left: 3%;
+	padding: 2%;
+}
+
+.contenedormicro3  .navbar{
+	background-color: #000000;
+	grid-area:  navbar;
+}
+
+.contenedormicro3 .contenido3{
+	background-color: #00D9FF; 
+	grid-area: contenido3;
+}
+
+.titulomicro4{
+	font-family: 'kanit', sans-serif;
+	color: #000000;
+	margin-top: 3%;
+	margin-left: 41%;
+	margin-bottom: 3%;
+}
+
+.contenedormicro3 .footer{
+	background-color: #000000;
+	grid-area: footer;
+}
+
+.videoyt{
+	width: 620px;
+	height: 400px;
+	margin-left: 22%;
+	margin-bottom: 5%;
+}
+
+.pdfguide{
+	width: 620px;
+	height: 750px;
+	margin-left: 22%;
+	margin-bottom: 5%;
+}
+
+}
+
+/* @media x-large 2 Micrositio - Relevamiento */
+
+@media (min-width: 1400px) and (max-width: 1600px){
+
+.contenedormicro{
+	width: 95%;
+	margin-right: auto;
+	margin-left: auto;
+	display: grid; 
+	grid-template-columns: 1fr 1fr 1fr;
+	grid-template-rows: repeat(3, auto);
+	grid-template-areas: "header header	navbar"
+						 "contenidomicro contenidomicro contenidomicro" 
+						 "footer footer	footer"; 
+}
+
+.contenedormicro .header{
+	background-color: #000000;
+	grid-area: header;
+}
+
+.logo{
+	width: 20%;
+	margin-top: 0.8%;
+	margin-left: 3%;
+	padding: 2%;
+}
+
+.contenedormicro  .navbar{
+	background-color: #000000;
+	grid-area:  navbar;
+}
+
+.r-link{
+  display: inline-flex;
+}
+
+.r-link[href]{
+  color: #ffffff;
+  text-decoration: none;
+  font-family: 'kanit', sans-serif;
+}
+
+.r-list{
+  padding-left: 0;
+  margin-top: 4%;
+  margin-bottom: 0;
+  list-style: none;
+}
+
+.menu{
+  color: #ffffff;
+}
+
+.menu__link{
+  display: block;
+}
+
+
+.menu:hover .menu__link:not(:hover){
+  color: #ffffff;
+}
+
+.menu{
+  background-color: #ffffff;
+  box-shadow: 0 1px 3px 0 rgba(0, 0, 0, .12), 0 1px 2px 0 rgba(0, 0, 0, .24);
+}
+
+.menu__list{
+  display: flex;  
+}
+
+.menu__link{
+  padding: 1.5rem 2rem;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.contenedormicro .contenidomicro{
+	background-color: #00D9FF; 
+	grid-area: contenidomicro;
+}
+
+.titulomicro{
+	font-size: 30px;
+	font-family: 'kanit', sans-serif;
+	color: #000000;
+	margin-top: 3%;
+	margin-left: 36.7%;
+	margin-bottom: 3%;
+}
+
+.contenedormicro .footer{
+	background-color: #000000;
+	grid-area: footer;
+}
+
+.pdf{
+	width: 700px;
+	height: 720px;
+	margin-left: 24%;
+	margin-bottom: 5%;
+}
+
+.behance{
+	width: 9%;
+	float: left;
+	margin-top: 1.7%;
+	margin-left: 3%;
+}
+
+.valentino{
+	font-size: 19px;
+	text-decoration: none;
+	color: #ffffff;
+	font-family: 'kanit', sans-serif;
+	margin-left: 32%;
+	float: left;
+	margin-top: 1.3%;
+}
+
+.uces{
+	width: 6%;
+	float: right;
+	margin-right: 3%;
+	margin-top: 1%;
+}
+
+}
+
+/* @media x-large 2 Micrositio - Memoria */
+
+@media (min-width: 1400px) and (max-width: 1600px){
+
+.contenedormicro1{
+	width: 95%;
+	margin-right: auto;
+	margin-left: auto;
+	display: grid; 
+	grid-template-columns: 1fr 1fr 1fr;
+	grid-template-rows: repeat(3, auto);
+	grid-template-areas: "header header	navbar"
+						 "contenido1 contenido1 contenido1" 
+						 "footer footer	footer"; 
+}
+
+.contenedormicro1 .header{
+	background-color: #000000;
+	grid-area: header;
+}
+
+.logo{
+	width: 20%;
+	margin-top: 0.8%;
+	margin-left: 3%;
+	padding: 2%;
+}
+
+.contenedormicro1  .navbar{
+	background-color: #000000;
+	grid-area:  navbar;
+}
+
+.contenedormicro1 .contenido1{
+	background-color: #00D9FF; 
+	grid-area: contenido1;
+}
+
+.titulomicro2{
+	font-size: 30px;
+	font-family: 'kanit', sans-serif;
+	color: #000000;
+	margin-top: 3%;
+	margin-left: 40%;
+	margin-bottom: 3%;
+}
+
+.contenedormicro1 .footer{
+	background-color: #000000;
+	grid-area: footer;
+}
+
+.tipografia{
+	margin-left: 19%;
+}
+
+.tipos{
+	width: 50%;
+	margin-left: 19%;
+}
+
+.paleta{
+	margin-left:19%;
+}
+
+.colores{
+	width: 50%;
+	margin-left: 18%;
+}
+
+.morfologia{
+	margin-left: 19%;
+}
+
+.micromemoria{
+	width: 55%;
+	font-size: 20px;
+	margin-left: 19%;
+	margin-right: 19%;
+}
+
+.micromemoria3{
+	width: 55%;
+	font-size: 20px;
+	margin-left: 19%;
+	margin-right: 19%;
+	margin-bottom: 7%;
+}
+
+}
+
+/* @media x-large 2 Micrositio - Estructura */
+
+@media (min-width: 1400px) and (max-width: 1600px){
+
+.contenedormicro2{
+	width: 95%;
+	margin-right: auto;
+	margin-left: auto;
+	display: grid; 
+	grid-template-columns: 1fr 1fr 1fr;
+	grid-template-rows: repeat(3, auto);
+	grid-template-areas: "header header	navbar"
+						 "contenido2 contenido2 contenido2" 
+						 "footer footer	footer"; 
+}
+
+.contenedormicro2 .header{
+	background-color: #000000;
+	grid-area: header;
+}
+
+.logo{
+	width: 20%;
+	margin-top: 0.8%;
+	margin-left: 3%;
+	padding: 2%;
+}
+
+.contenedormicro2  .navbar{
+	background-color: #000000;
+	grid-area:  navbar;
+}
+
+.contenedormicro2 .contenido2{
+	background-color: #00D9FF; 
+	grid-area: contenido2;
+}
+
+.titulomicro3{
+	font-size: 30px;
+	font-family: 'kanit', sans-serif;
+	color: #000000;
+	margin-top: 3%;
+	margin-left: 39%;
+	margin-bottom: 3%;
+}
+
+.contenedormicro2 .footer{
+	background-color: #000000;
+	grid-area: footer;
+}
+
+.medida1{
+	font-family: 'kanit', sans-serif;
+	font-size: 25px;
+	float: left;
+	color: #000000;
+	margin-bottom: 1%;
+	margin-left:13%;
+}
+
+.medida2{
+	font-family: 'kanit', sans-serif;
+	font-size: 25px;
+	float: left;
+	color: #000000;
+	margin-top: 2%;
+	margin-bottom: 1%;
+	margin-left:13%;
+}
+
+.medida3{
+	font-family: 'kanit', sans-serif;
+	font-size: 25px;
+	float: left;
+	color: #000000;
+	margin-top: 2%;
+	margin-bottom: 1%;
+	margin-left:13%;
+}
+
+.medida4{
+	font-family: 'kanit', sans-serif;
+	font-size: 25px;
+	float: left;
+	color: #000000;
+	margin-top: 2%;
+	margin-bottom: 1%;
+	margin-left:13%;
+}
+
+.galeriawire{
+	float: left;
+	margin-right: 5%;
+	margin-left: 13%;
+	margin-bottom: 2%;
+}
+
+.galeriawire2{
+	float: left;
+	margin-left: 13%;
+	margin-right: 5%;
+	margin-bottom: 2%;
+}
+
+.galeriawire3{
+	float: left;
+	margin-left: 13%;
+	margin-right: 5%;
+	margin-bottom: 2%;
+}
+
+.galeriawire4{
+	float: left;
+	margin-left: 13%;
+	margin-right: 5%;
+	margin-bottom: 5%;
+}
+
+.foto1{
+	width: 45%;
+}
+
+}
+
+/* @media x-large 2 Micrositio - Muestra */
+
+@media (min-width: 1400px) and (max-width: 1600px){
+
+.contenedormicro3{
+	width: 95%;
+	margin-right: auto;
+	margin-left: auto;
+	display: grid; 
+	grid-template-columns: 1fr 1fr 1fr;
+	grid-template-rows: repeat(3, auto);
+	grid-template-areas: "header header	navbar"
+						 "contenido3 contenido3 contenido3" 
+						 "footer footer	footer"; 
+}
+
+.contenedormicro3 .header{
+	background-color: #000000;
+	grid-area: header;
+}
+
+.logo{
+	width: 20%;
+	margin-top: 0.8%;
+	margin-left: 3%;
+	padding: 2%;
+}
+
+.contenedormicro3  .navbar{
+	background-color: #000000;
+	grid-area:  navbar;
+}
+
+.contenedormicro3 .contenido3{
+	background-color: #00D9FF; 
+	grid-area: contenido3;
+}
+
+.titulomicro4{
+	font-size: 30px;
+	font-family: 'kanit', sans-serif;
+	color: #000000;
+	margin-top: 3%;
+	margin-left: 40%;
+	margin-bottom: 3%;
+}
+
+.contenedormicro3 .footer{
+	background-color: #000000;
+	grid-area: footer;
+}
+
+.videoyt{
+	width: 700px;
+	height: 500px;
+	margin-left: 24%;
+	margin-bottom: 5%;
+}
+
+.pdfguide{
+	width: 700px;
+	height: 950px;
+	margin-left: 24%;
+	margin-bottom: 5%;
+}
+
+}
